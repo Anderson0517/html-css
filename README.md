@@ -1,3 +1,3 @@
 Entre por aqui no meu gitHub...
 
-<a href="https://anderson0517.github.io/html-css/exerc%C3%ADcios/ex002/index.htm"> Executar o exercício 001</a>
+<a href="https://anderson0517.github.io/html-css/exercicios/ex002/index.htm"> Executar o exercício 001</a>
