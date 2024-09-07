@@ -6,13 +6,23 @@
     <title>Espaço</title>
     <style>
         #container {
-
+            height: 96vh;
             background-image: url('imagem/espaco.jpg');
             background-size: 100% 100%;
+            padding: 10px;
+            position: relative;
         }
 
         #conteudo {
+            height: 500px;
+            width: 500px;
+            position: absolute;
             background-image: url('imagem/astronauta.png');
+
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%);
         }
     </style>
 </head>
