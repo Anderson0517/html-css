@@ -7,11 +7,26 @@
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
-            
+              
+        }
+        h1 {
+            text-align: center;
+        }
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgrey;
         }
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(41, 116, 177);
         }
         td, th {
             border: 1px solid black;
@@ -20,6 +35,15 @@
         thead, tfoot {
             background-color: gray;
             color: white;
+        }
+        /* tambem posso usar 2n-1 */
+        tbody > tr:nth-child(odd){
+            background-color: white;
+           
+        }
+        tbody > tr:nth-child(even){
+            background-color: rgb(161, 156, 156);
+           
         }
         td.num {
             text-align: right;
@@ -41,10 +65,11 @@
             TR, TD, TH
      -->
             <table>
+                <caption>População das Unidades Federativas</caption>
                 <thead>
                     <tr>
-                        <th>Estado</th>
-                        <th>População</th>
+                        <th scope="col">Estado</th>
+                        <th scope="col" style="width: 100px;">População</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -160,10 +185,21 @@
                 </tbody>
                 <tfoot>
                     <tr>
-                        <th>Total de habitantes</th>
+                        <th scope="row">Total de habitantes</th>
                         <td class="num"><strong>203 080 756</strong></td>
                     </tr>
                 </tfoot>
             </table>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt quia facilis, quam temporibus officiis amet. Exercitationem quis vero quasi. Alias reprehenderit ex error facilis necessitatibus laboriosam. Ex asperiores quia quo!Lorem</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nihil nostrum voluptas commodi aspernatur id consequatur molestiae voluptates et, obcaecati ex sed porro at ad quo culpa enim amet nobis adipisci, mollitia dolore cupiditate doloremque dolores odio. Tempora, corporis explicabo. Officiis eius corporis sint sequi dolorum aliquam, quaerat nam nihil.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, neque. Tenetur error voluptate quia nihil vel odit expedita accusantium minima asperiores nulla harum non illo voluptatem officia voluptates earum, enim saepe adipisci accusamus id reiciendis! Distinctio perferendis rem illum nostrum quae veritatis praesentium obcaecati ipsam deserunt quis, eius hic totam consequuntur asperiores voluptates quam nesciunt ducimus sequi blanditiis recusandae odit repellat quod itaque iusto. Laudantium officiis nesciunt, nihil odio provident recusandae atque magni aliquam? Officia laudantium, animi, iusto, officiis excepturi quos ipsam ducimus dolor non corrupti odit modi vel veritatis. Cum, quos. Eius animi sed soluta vitae expedita impedit eaque.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, neque. Tenetur error voluptate quia nihil vel odit expedita accusantium minima asperiores nulla harum non illo voluptatem officia voluptates earum, enim saepe adipisci accusamus id reiciendis! Distinctio perferendis rem illum nostrum quae veritatis praesentium obcaecati ipsam deserunt quis, eius hic totam consequuntur asperiores voluptates quam nesciunt ducimus sequi blanditiis recusandae odit repellat quod itaque iusto. Laudantium officiis nesciunt, nihil odio provident recusandae atque magni aliquam? Officia laudantium, animi, iusto, officiis excepturi quos ipsam ducimus dolor non corrupti odit modi vel veritatis. Cum, quos. Eius animi sed soluta vitae expedita impedit eaque.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, neque. Tenetur error voluptate quia nihil vel odit expedita accusantium minima asperiores nulla harum non illo voluptatem officia voluptates earum, enim saepe adipisci accusamus id reiciendis! Distinctio perferendis rem illum nostrum quae veritatis praesentium obcaecati ipsam deserunt quis, eius hic totam consequuntur asperiores voluptates quam nesciunt ducimus sequi blanditiis recusandae odit repellat quod itaque iusto. Laudantium officiis nesciunt, nihil odio provident recusandae atque magni aliquam? Officia laudantium, animi, iusto, officiis excepturi quos ipsam ducimus dolor non corrupti odit modi vel veritatis. Cum, quos. Eius animi sed soluta vitae expedita impedit eaque.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, neque. Tenetur error voluptate quia nihil vel odit expedita accusantium minima asperiores nulla harum non illo voluptatem officia voluptates earum, enim saepe adipisci accusamus id reiciendis! Distinctio perferendis rem illum nostrum quae veritatis praesentium obcaecati ipsam deserunt quis, eius hic totam consequuntur asperiores voluptates quam nesciunt ducimus sequi blanditiis recusandae odit repellat quod itaque iusto. Laudantium officiis nesciunt, nihil odio provident recusandae atque magni aliquam? Officia laudantium, animi, iusto, officiis excepturi quos ipsam ducimus dolor non corrupti odit modi vel veritatis. Cum, quos. Eius animi sed soluta vitae expedita impedit eaque.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, neque. Tenetur error voluptate quia nihil vel odit expedita accusantium minima asperiores nulla harum non illo voluptatem officia voluptates earum, enim saepe adipisci accusamus id reiciendis! Distinctio perferendis rem illum nostrum quae veritatis praesentium obcaecati ipsam deserunt quis, eius hic totam consequuntur asperiores voluptates quam nesciunt ducimus sequi blanditiis recusandae odit repellat quod itaque iusto. Laudantium officiis nesciunt, nihil odio provident recusandae atque magni aliquam? Officia laudantium, animi, iusto, officiis excepturi quos ipsam ducimus dolor non corrupti odit modi vel veritatis. Cum, quos. Eius animi sed soluta vitae expedita impedit eaque.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, neque. Tenetur error voluptate quia nihil vel odit expedita accusantium minima asperiores nulla harum non illo voluptatem officia voluptates earum, enim saepe adipisci accusamus id reiciendis! Distinctio perferendis rem illum nostrum quae veritatis praesentium obcaecati ipsam deserunt quis, eius hic totam consequuntur asperiores voluptates quam nesciunt ducimus sequi blanditiis recusandae odit repellat quod itaque iusto. Laudantium officiis nesciunt, nihil odio provident recusandae atque magni aliquam? Officia laudantium, animi, iusto, officiis excepturi quos ipsam ducimus dolor non corrupti odit modi vel veritatis. Cum, quos. Eius animi sed soluta vitae expedita impedit eaque.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, neque. Tenetur error voluptate quia nihil vel odit expedita accusantium minima asperiores nulla harum non illo voluptatem officia voluptates earum, enim saepe adipisci accusamus id reiciendis! Distinctio perferendis rem illum nostrum quae veritatis praesentium obcaecati ipsam deserunt quis, eius hic totam consequuntur asperiores voluptates quam nesciunt ducimus sequi blanditiis recusandae odit repellat quod itaque iusto. Laudantium officiis nesciunt, nihil odio provident recusandae atque magni aliquam? Officia laudantium, animi, iusto, officiis excepturi quos ipsam ducimus dolor non corrupti odit modi vel veritatis. Cum, quos. Eius animi sed soluta vitae expedita impedit eaque.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, neque. Tenetur error voluptate quia nihil vel odit expedita accusantium minima asperiores nulla harum non illo voluptatem officia voluptates earum, enim saepe adipisci accusamus id reiciendis! Distinctio perferendis rem illum nostrum quae veritatis praesentium obcaecati ipsam deserunt quis, eius hic totam consequuntur asperiores voluptates quam nesciunt ducimus sequi blanditiis recusandae odit repellat quod itaque iusto. Laudantium officiis nesciunt, nihil odio provident recusandae atque magni aliquam? Officia laudantium, animi, iusto, officiis excepturi quos ipsam ducimus dolor non corrupti odit modi vel veritatis. Cum, quos. Eius animi sed soluta vitae expedita impedit eaque.</p>
 </body>
 </html>
