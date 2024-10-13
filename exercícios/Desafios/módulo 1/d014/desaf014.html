@@ -13,27 +13,29 @@
             
         }
         th,td {
-            border: 1px solid gray;
+            border: 1px solid rgb(10, 10, 10);
             padding: 10px;
         }
         thead > tr >  {
-            background-color: grey;
-
-
+            background-color: rgb(8, 8, 8);
+        }
+        .destaque {
+            background-color: rgb(150, 148, 148);
         }
     </style>
 </head>
 <body>
     <table>
+       
         <thead>
-            <tr >
+            <tr class="destaque">
                 <th rowspan="2">Àrea</th>
                 <th rowspan="2">Disciplina</th>
                 <th colspan="2">Notas</th>
                 
                 <th rowspan="2">Média</th>
             </tr>
-            <tr>
+            <tr class="destaque">
                 
                 <td>Nota 1</td>
                 <td>nota 2</td>
@@ -67,7 +69,7 @@
                 <td>0.0</td>
             </tr>
            
-            <tr>
+            <tr class="destaque">
                 <th colspan="4">Média de Exatas</th>
                 <td>0.0</td>
             </tr>
@@ -85,8 +87,11 @@
                 <td>0.0</td>
                 <td>0.0</td>
             </tr>
-            <th colspan="4">Média de Humanas</th>
-            <td>0.0</td>
+            <tr class="destaque">
+                <th colspan="4" >Média de Humanas</th>
+                <td>0.0</td>
+            </tr>
+
           
          
         </tbody>
